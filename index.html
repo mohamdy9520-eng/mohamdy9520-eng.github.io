@@ -45,7 +45,10 @@
     padding: 1.4rem;
   }
   .card.jobora { border-top-color: #4F5FEA; }
+  .app-head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.25rem; }
+  .app-head img { width: 48px; height: 48px; border-radius: 12px; object-fit: cover; }
   .card h3 { margin: 0 0 0.25rem; font-size: 1.3rem; }
+  .app-head h3 { margin: 0; }
   .card .tag { margin: 0 0 0.75rem; font-size: 0.9rem; font-weight: 600; color: var(--muted); }
   .card p.desc { color: var(--muted); flex: 1; }
   .btn {
@@ -79,7 +82,10 @@
   <h2>Our apps</h2>
   <div class="apps">
     <article class="card">
-      <h3>Monevro</h3>
+      <div class="app-head">
+        <img src="monevro-logo.png" alt="Monevro logo" width="48" height="48">
+        <h3>Monevro</h3>
+      </div>
       <p class="tag">AI expense tracker &amp; budget planner</p>
       <p class="desc">Scan receipts with AI, track your spending, and reach your savings goals.</p>
       <a class="btn" href="monevro.html">Learn more</a>
