@@ -98,8 +98,8 @@
 
   <header>
     <h1>Monevro</h1>
-    <p>المطوّر: <strong>Skillro</strong> &nbsp;|&nbsp; Developer: <strong>Skillro</strong></p>
-    <p id="updated-label">تاريخ السريان وآخر تحديث: 18 أكتوبر 2026 &nbsp;|&nbsp; Effective &amp; last updated: October 18, 2026</p>
+    <p>المطوّر: <strong>Skillro</strong> &nbsp;|&nbsp; Developer: <strong>Skillro</strong></p> 
+    <p id="updated-label">تاريخ السريان وآخر تحديث: 22 نوفمبر 2026 &nbsp;|&nbsp; Effective &amp; last updated: November 22, 2026</p>
   </header>
 
   <div class="lang-toggle">
@@ -121,7 +121,8 @@
       <h2>البيانات التي نجمعها</h2>
       <ul>
         <li><strong>بيانات الحساب:</strong> البريد الإلكتروني، ومعرّف المستخدم (User ID)، وذلك عبر خدمة Firebase Authentication من Google لإنشاء حسابك وتسجيل الدخول.</li>
-        <li><strong>تسجيل الدخول بحساب جوجل (اختياري):</strong> عند اختيار "تسجيل الدخول عبر Google"، نحصل من جوجل على اسمك وبريدك الإلكتروني وصورة حسابك (إن وُجدت) لإنشاء/الدخول لحسابك في Monevro.</li>
+        <li><strong>تسجيل الدخول بحساب جوجل (اختياري):</strong> عند اختيار "تسجيل الدخول عبر Google"، نحصل من جوجل على اسمك وبريدك الإلكتروني وصورة حسابك (إن وُجدت) لإنشاء/الدخول لحسابك في Monevro.</li> 
+        <li><strong>صورة الملف الشخصي (اختياري):</strong> إذا اخترت صورة لحسابك، يتم رفعها وتخزينها في Firebase Storage (من Google) المرتبط بحسابك، وتُحذف نهائيًا عند حذف حسابك.</li>
         <li><strong>البيانات المالية:</strong> المصروفات، الدخل، الميزانيات (Budgets)، والأهداف المالية (Goals) التي تُدخلها بنفسك داخل التطبيق، ويتم تخزينها في قاعدة بيانات Cloud Firestore (من Google) المرتبطة بحسابك.</li>
         <li><strong>جهات الاتصال التي تضيفها يدويًا (اختياري):</strong> الاسم والبريد الإلكتروني أو رقم الهاتف اللذان تكتبهما بنفسك داخل التطبيق، ويتم تخزينهما في Cloud Firestore المرتبطة بحسابك. لا يصل التطبيق إلى جهات الاتصال المحفوظة على جهازك ولا يقرؤها.</li>
         <li><strong>بيانات الإيصالات (اختياري):</strong> عند استخدام ميزة مسح الإيصالات، يتم إرسال صورة الإيصال إلى خدمة Google Gemini لاستخراج تفاصيل المصروف تلقائيًا. لا نقوم بتخزين صور الإيصالات لدينا؛ تُستخدم فقط لاستخراج بيانات المصروف ثم تُحذف، ويُحفظ فقط ما تم استخراجه من بيانات (مثل المبلغ والتاريخ والتاجر).</li>
@@ -196,8 +197,8 @@
     <section class="card">
       <h2>مشاركة البيانات مع أطراف ثالثة</h2>
       <p>نشارك بياناتك فقط مع مزودي الخدمات التالية، وذلك بالقدر اللازم لتشغيل التطبيق:</p>
-      <ul>
-        <li><strong>Google Firebase</strong> (المصادقة وقاعدة البيانات والإشعارات والتحليلات Analytics)</li>
+      <ul> 
+        <li><strong>Google Firebase</strong> (المصادقة وقاعدة البيانات وتخزين الملفات والإشعارات والتحليلات Analytics)</li>
         <li><strong>OpenRouter</strong> (توليد النصائح المالية بالذكاء الاصطناعي)</li>
         <li><strong>Google Gemini</strong> (نصائح احتياطية + قراءة الإيصالات)</li>
         <li><strong>RevenueCat</strong> (إدارة الاشتراكات والمدفوعات داخل التطبيق)</li>
@@ -297,7 +298,8 @@
       <h2>Information We Collect</h2>
       <ul>
         <li><strong>Account data:</strong> your email address and user ID, via Firebase Authentication (Google) to create and manage your account.</li>
-        <li><strong>Sign in with Google (optional):</strong> when you choose "Sign in with Google," we receive your name, email address, and profile photo (if available) from Google to create/access your Monevro account.</li>
+        <li><strong>Sign in with Google (optional):</strong> when you choose "Sign in with Google," we receive your name, email address, and profile photo (if available) from Google to create/access your Monevro account.</li> 
+        <li><strong>Profile photo (optional):</strong> if you choose a photo for your account, it is uploaded and stored in Firebase Storage (Google) linked to your account, and permanently deleted when you delete your account.</li>
         <li><strong>Financial data:</strong> expenses, income, budgets, and financial goals you enter in the app, stored in Cloud Firestore (Google) linked to your account.</li>
         <li><strong>Contacts you add manually (optional):</strong> the name and email address or phone number you type yourself inside the app, stored in Cloud Firestore linked to your account. The app does not access or read the contacts saved on your device.</li>
         <li><strong>Receipt data (optional):</strong> when you use the receipt-scanning feature, the receipt image is sent to Google Gemini to automatically extract expense details. We do not store receipt images; they are used only to extract the expense details and are then discarded, and only the extracted data (such as amount, date, and merchant) is saved.</li>
@@ -373,7 +375,7 @@
       <h2>Third-Party Sharing</h2>
       <p>We only share your data with the following service providers, to the extent necessary to operate the app:</p>
       <ul>
-        <li><strong>Google Firebase</strong> (authentication, database, notifications, and Analytics)</li>
+        <li><strong>Google Firebase</strong> (authentication, database, file storage, notifications, and Analytics)</li>
         <li><strong>OpenRouter</strong> (AI-generated financial advice)</li>
         <li><strong>Google Gemini</strong> (backup advice generation + receipt OCR)</li>
         <li><strong>RevenueCat</strong> (in-app subscription and purchase management)</li>

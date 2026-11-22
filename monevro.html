@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="favicon.png">
 <title>Monevro – AI Expense Tracker &amp; Budget Planner | Skillro</title>
-<meta name="description" content="Monevro is an AI expense tracker and budget planner by Skillro. Scan receipts, track spending, and reach your savings goals.">
+<meta name="description" content="Monevro is an AI expense tracker and budget planner by Skillro. Scan receipts with AI, track spending, plan budgets, and reach your savings goals. Available on Android in English and Arabic.">
 <style>
   :root {
     --ink: #1c2b4d;
@@ -56,6 +56,13 @@
   dd { margin: 0.2rem 0 0; padding-bottom: 1rem; border-bottom: 1px solid var(--line); color: var(--muted); }
   a { color: var(--teal); }
   .legal-links a { margin-inline-end: 1.25rem; font-weight: 600; }
+  ol.steps { margin: 0; padding-inline-start: 1.25rem; }
+  ol.steps li { margin: 0 0 0.9rem; max-width: 60ch; }
+  ol.steps strong { display: block; }
+  details { border-top: 1px solid var(--line); padding: 0.9rem 0; }
+  details:last-of-type { border-bottom: 1px solid var(--line); }
+  summary { font-weight: 700; cursor: pointer; }
+  details p { margin: 0.6rem 0 0; color: var(--muted); }
   footer { margin-top: 3rem; font-size: 0.95rem; color: var(--muted); }
 </style>
 </head>
@@ -65,6 +72,7 @@
 </div>
 <main>
   <p class="crumb"><a href="index.html">Skillro</a> / Monevro</p>
+  <img src="monevro-logo-web.png" alt="Monevro app icon" width="120" height="120" style="display:block;border-radius:26px;margin:0 0 1.25rem;">
   <h1>Monevro</h1>
   <p class="lead">An AI expense tracker and budget planner that helps you understand your spending and reach your savings goals.</p>
 
@@ -88,6 +96,52 @@
     <dt>Keep your account secure</dt>
     <dd>Sign in with email or Google, and optionally use biometric login on your device.</dd>
   </dl>
+
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><strong>Create your account</strong>Sign up with your email or continue with Google. Your account keeps your data in sync and private to you.</li>
+    <li><strong>Add your money activity</strong>Enter expenses and income by hand, or photograph a receipt and let the AI fill in the amount, date, and merchant.</li>
+    <li><strong>Set budgets and goals</strong>Set spending budgets and savings goals, then follow your progress over time.</li>
+    <li><strong>Ask for AI advice</strong>Request a personalized tip or plan based on your own numbers. The advice is a starting point, not professional financial advice.</li>
+  </ol>
+
+  <h2>Frequently asked questions</h2>
+  <details>
+    <summary>Is Monevro free?</summary>
+    <p>Yes. The free plan includes expense tracking, budgets, and goals, and shows ads. Free accounts get a limited number of AI features each month, and optional Premium subscriptions (monthly or yearly, through Google Play) offer more. You can cancel any time from your Google Play account.</p>
+  </details>
+  <details>
+    <summary>Which languages does the app support?</summary>
+    <p>Monevro is available in English and Arabic, and you can switch the language inside the app.</p>
+  </details>
+  <details>
+    <summary>What happens to my receipt photos?</summary>
+    <p>When you scan a receipt, the photo is sent to Google Gemini only to read the amount, date, and merchant. We do not keep the photo; only the extracted details are saved to your account.</p>
+  </details>
+  <details>
+    <summary>What data does the AI advice use?</summary>
+    <p>Only summarized financial figures such as income, expenses, and goals. Your email address and other personal identifiers are not included in these requests. The full list of providers is in the Privacy Policy.</p>
+  </details>
+  <details>
+    <summary>Does Monevro read my phone contacts?</summary>
+    <p>No. Any contact you add is typed in by you inside the app. Monevro does not access the contacts saved on your device.</p>
+  </details>
+  <details>
+    <summary>How do I delete my account and data?</summary>
+    <p>Open Profile, then Login &amp; Security, then Delete Account. Your account data, transactions, budgets, goals, and notification token are permanently removed. You can also email us at skillro.support@gmail.com. To clear only your financial data and keep your account, use the menu on the home screen and choose &ldquo;Reset all data&rdquo;.</p>
+  </details>
+  <details>
+    <summary>Is the AI advice professional financial advice?</summary>
+    <p>No. Monevro is a personal organization tool. AI tips, plans, and receipt readings can contain mistakes, so please check important figures and consult a qualified professional before making financial decisions.</p>
+  </details>
+  <details>
+    <summary>Is biometric login safe?</summary>
+    <p>If you turn on fingerprint or face unlock, it is handled entirely by your device&rsquo;s secure hardware. Your biometric data never leaves your phone.</p>
+  </details>
+  <details>
+    <summary>How do I get help or report a problem?</summary>
+    <p>Email <a href="mailto:skillro.support@gmail.com">skillro.support@gmail.com</a> and describe what happened, including your app version if you can.</p>
+  </details>
 
   <h2>Privacy &amp; Terms</h2>
   <p>Read how Monevro handles your data and the rules for using the app.</p>
